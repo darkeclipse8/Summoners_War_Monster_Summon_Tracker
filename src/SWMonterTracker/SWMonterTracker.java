@@ -44,7 +44,9 @@ public class SWMonterTracker {
         SOP("Accuracy: " + Su.getAccuracy() + "%");
         */
         
-        SWMTGui swmtgui = new SWMTGui();
+       // SWMTGui swmtgui = new SWMTGui();
+        RuneStat rs = new RuneStat("ATK",10,false);
+        System.out.println(rs.toString());
         
         /* 
         

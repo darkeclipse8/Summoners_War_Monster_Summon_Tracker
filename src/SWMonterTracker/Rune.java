@@ -9,6 +9,7 @@ package SWMonterTracker;
  *
  * @author Busairo
  */
-public class Rune {
-    
+public class Rune 
+{
+    private int rune_number;
 }

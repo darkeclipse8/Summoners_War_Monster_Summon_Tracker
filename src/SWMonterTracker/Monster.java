@@ -22,6 +22,7 @@ public class Monster
     public int critdmg;
     public int resistance;
     public int accuracy;
+    public RuneTable runes;
     
     public Monster(String n, int l, int g, int h, int a, int d, int s, int cr, int cd, int r, int ac)
     {
@@ -36,6 +37,7 @@ public class Monster
         critdmg = cd;
         resistance = r;
         accuracy = ac;
+        runes = new RuneTable();
     }
     
     public String getName()
