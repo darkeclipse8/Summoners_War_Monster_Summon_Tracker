@@ -106,5 +106,6 @@ public class Monster
     public void setAccuracy(int newAccuracy)
     {   accuracy = newAccuracy; }
     
-    
+    public RuneTable getRunes()
+    {   return runes;   }
 }

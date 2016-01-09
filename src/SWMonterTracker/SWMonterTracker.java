@@ -45,8 +45,53 @@ public class SWMonterTracker {
         */
         
        // SWMTGui swmtgui = new SWMTGui();
-        RuneStat rs = new RuneStat("ATK",10,false);
-        System.out.println(rs.toString());
+        RuneStat rs1 = new RuneStat("ATK",10,false);
+        RuneStat rs2 = new RuneStat("DEF",9,false);
+        RuneStat rs3 = new RuneStat("RES",17,false);
+        RuneStat rs4 = new RuneStat("ATK",8,false);
+        RuneStat rs5 = new RuneStat("DEF",5,false);
+        RuneStat rs6 = new RuneStat("RES",3,false);
+        
+        Rune rune1 = new Rune("Energy", 1);
+        rune1.addStat(rs1);
+        rune1.addStat(rs2);
+        rune1.addStat(rs3);
+        rune1.addStat(rs4);
+        rune1.addStat(rs5);
+        rune1.addStat(rs6);
+        
+        System.out.println("Rune 1: \n" + rune1.toString());
+        
+        RuneStat replacerStat = new RuneStat("CRITD", 20, false);
+        
+        rune1.replaceStat(1, replacerStat);
+        
+        System.out.println("After replacing a stat.....the 2nd stat...");
+        System.out.println("Rune 1: \n" + rune1.toString());
+        
+        rune1.removeStat(2);
+        
+        System.out.println("After removing a stat..the 3rd stat...\n" + rune1.toString());
+        
+        System.out.println("Testing upgrading runes...stats for test will not be affected ");
+        
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        rune1.upgradeRune();
+        
+        rune1.setGrade(6);
+        
+        System.out.println("After testing upgrade rune..... should be now be +12 before type and legendary....and surprise make it a 6 star\n" + rune1.toString());
+        
         
         /* 
         
