@@ -44,8 +44,8 @@ public class SWMonterTracker {
         SOP("Accuracy: " + Su.getAccuracy() + "%");
         */
         
-       // SWMTGui swmtgui = new SWMTGui();
-        RuneStat rs1 = new RuneStat("ATK",10,false);
+       SWMTGui swmtgui = new SWMTGui();
+        /*RuneStat rs1 = new RuneStat("ATK",10,false);
         RuneStat rs2 = new RuneStat("DEF",9,false);
         RuneStat rs3 = new RuneStat("RES",17,false);
         RuneStat rs4 = new RuneStat("ATK",8,false);
@@ -90,7 +90,7 @@ public class SWMonterTracker {
         
         rune1.setGrade(6);
         
-        System.out.println("After testing upgrade rune..... should be now be +12 before type and legendary....and surprise make it a 6 star\n" + rune1.toString());
+        System.out.println("After testing upgrade rune..... should be now be +12 before type and legendary....and surprise make it a 6 star\n" + rune1.toString());*/
         
         
         /* 
